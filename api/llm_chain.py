@@ -29,7 +29,6 @@ llm_chain = LLMChain(
 	llm=llm
 )
 
-# Example question
-question = "我今天的财运如何？"
-
-print(llm_chain.run(question))
+if __name__ == "__main__":
+    # Run the chain only specifying the input variable.
+    print(chain.run("我今天的财运如何？"))

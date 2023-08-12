@@ -24,7 +24,7 @@ template = """
 
 prompt = PromptTemplate(template=template, input_variables=["question"])
 
-llm_chain = LLMChain(
+chain = LLMChain(
 	prompt=prompt,
 	llm=llm
 )

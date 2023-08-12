@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
-load_dotenv('.env')
+# load_dotenv('.env')
 
 # Access environment variables
 REPLICATE_API_TOKEN = os.environ.get('REPLICATE_API_TOKEN')

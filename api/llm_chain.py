@@ -1,13 +1,5 @@
 from langchain import LLMChain, PromptTemplate
 from langchain.llms import Replicate
-from dotenv import load_dotenv
-import os
-
-# Load environment variables from .env file
-# load_dotenv('.env')
-
-# Access environment variables
-REPLICATE_API_TOKEN = os.environ.get('REPLICATE_API_TOKEN')
 
 # initialize LLM
 llm = Replicate(
@@ -40,5 +32,4 @@ llm_chain = LLMChain(
 # Example question
 question = "我今天的财运如何？"
 
-output = llm_chain.run(question)
-output
+print(llm_chain.run(question))
